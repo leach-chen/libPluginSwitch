@@ -1,0 +1,38 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
+
+dependencies {
+    compile 'com.android.tools.build:gradle:3.1.3'
+    compile group: 'org.javassist', name: 'javassist', version: '3.20.0-GA'
+    //gradle sdk
+    compile gradleApi()
+    //groovy sdk
+    compile localGroovy()
+}
+
+repositories {
+    mavenCentral()
+}
+
+group='com.leachchen.plugin.out'
+version='1.0.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+        }
+    }
+}
+
+publish {
+    userOrg = 'leachchen' //url 后面的用户名
+    groupId = 'com.leachchen.plugin.out' //maven仓库下库的包名，一般为模块包名
+    artifactId = 'PluginSwitch' //项目名称，会在maven仓库下创建该名称的项目
+    publishVersion = '1.0.0' //版本号
+    desc = 'for project plugin develop' //项目介绍，可以不写
+    website = '' //项目主页，可以不写
+}
+// classpath 'com.leachchen.plugin.out:PluginSwitch:1.0.0' groupId:artifactId:publishVersion
+//gradlew clean build bintrayUpload -PbintrayUser=leach-chen -PbintrayKey=9367cd4a0ad0d8a40399967dadc01ea310298960 -PdryRun=false
