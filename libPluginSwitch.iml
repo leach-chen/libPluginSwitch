@@ -257,5 +257,13 @@
     <orderEntry type="library" exported="" scope="TEST" name="gradle-api-4.4" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="groovy-all-2.4.12" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="gradle-installation-beacon-4.4" level="project" />
+    <orderEntry type="library" exported="" name="libPluginSwitch.libPluginSwitch-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="libPluginSwitch.libPluginSwitch-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="libPluginSwitch.libPluginSwitch-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="libPluginSwitch.libPluginSwitch-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="libPluginSwitch.libPluginSwitch-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="libPluginSwitch.libPluginSwitch-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="libPluginSwitch.libPluginSwitch-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="libPluginSwitch.libPluginSwitch-1.0.0" level="project" />
   </component>
 </module>
